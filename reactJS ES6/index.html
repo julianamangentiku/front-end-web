@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        class Calculator {
+            constructor(myName) {
+                this.studentName = myName;
+            }
+            printStudent() {
+                return 'my name is' + this.studentName;
+            }
+            add (a, b) {
+                return a + b;
+            }
+            subtract(a, b) {
+                return a - b;
+            }
+            multiply(a, b) {
+                return a * b;
+            }
+            divide(a, b) {
+                return a / b;
+            }
+        }
+
+        const myCal = new Calculator(" Ana ");
+        document.write("<p>Me: " +  myCal.printStudent () + "</p>");
+
+        function claculate(a, b) {
+            const add = myCal.add(a, b);
+            const subtract = myCal.subtract(a, b);
+            const multiply = myCal.multiply(a, b);
+            const divide = myCal.divide(a, b);
+
+            return [add, subtract, multiply, divide];
+        }
+
+        const [add, subtract, multiply, divide] = claculate (5, 10);
+
+        document.write("<p>Sum: " + add + "</p>");
+        document.write("<p>Defference: " + subtract + "</p>");
+        document.write("<p>Product: " + multiply + "</p>");
+        document.write("<p>Division: " + divide + "</p>");
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template Literal ES6</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+
+        const nama = "Ana Mangentiku";
+        const usia = 20;
+        const pekerjaan = "mahasiswa";
+
+        const profil = `
+            Name: ${nama} <br>
+            Age: ${usia} tahun <br>
+            Expertise/job: ${pekerjaan}
+        `;
+
+
+        document.getElementById('output').innerHTML = profil;
+    </script>
+</body>
+</html>
